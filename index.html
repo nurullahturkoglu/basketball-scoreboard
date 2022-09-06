@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js"></script>
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="time">
+          <div class="minute">2</div>
+          <div>:</div>
+          <div class="second">06</div>
+        </div>
+        <div class="point">
+          <div class="team">
+            <p class="score-sum" id="score-home">47</p>
+            <p class="score-title">HOME</p>
+            <div onclick="increment('home')" class="increment" >INC</div>
+          </div>
+          <div class="properties">
+            <span>Bonus 🔻</span>
+            <span>Poss 🔻</span>
+            <span class="period-title">Period</span>
+            <span class="period-time">3</span>
+            <span id="score-reset" onclick="reset()">RESET</span>
+          </div>
+          <div class="team">
+            <p class="score-sum" id="score-visitor">35</p>
+            <p class="score-title">VISITOR</p>
+            <div onclick="increment('visitor')" class="increment">INC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
